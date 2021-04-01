@@ -1,0 +1,26 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+Signin
+{% endblock %}
+
+{% block content %}
+<div class="signin-background">
+    <img src="{% static 'images/cafe.png' %}" width="150" height="150" style="margin-left: 150px;"/>
+    <div class="mb-3 signin-form-space">
+        <label for="username1" class="form-label">Username:</label>
+        <input type="email" class="form-control" id="username1" placeholder="username">
+      </div>
+      <div class="mb-3 signin-form-space">
+        <label for="password1" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="password1" placeholder="password">
+      </div>
+      <div>
+        <button type="button" class="btn btn-info signin-form-btn">Login</button>        
+        <button type="button" class="btn btn-info signin-form-btn">Signup</button>
+    </div>
+
+</div>
+
+{% endblock %}

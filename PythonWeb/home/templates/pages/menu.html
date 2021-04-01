@@ -1,0 +1,240 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block title %}
+Menu
+{% endblock %}
+
+{% block content %}
+<script>
+    function testFunction(){
+        console.log("test function nek");
+    }
+</script>
+<div class="menu-body">
+    <div class="menu-navigation">
+        <div class="menu-nav-div">
+            <a href="#coffee-section" class="menu-nav-tag" onclick="testFunction()">COFFEE</a>
+        </div>
+        <div class="menu-nav-div">
+            <a href="#milk-tea-section" class="menu-nav-tag">MILK TEA</a>
+        </div>
+        <div class="menu-nav-div">
+            <a href="#freeze-section" class="menu-nav-tag">FREEZE</a>
+        </div>
+        <div class="menu-nav-div">
+            <a href="#fruit-tea-section" class="menu-nav-tag">FRUIT TEA</a>
+        </div>
+        <div class="menu-nav-div">
+            <a href="#cake-section" class="menu-nav-tag">CAKE</a>
+        </div>
+    </div>
+    <div class="menu-content">
+        <div id="coffee-section">
+            <h2 class="menu-header menu-header-top">Coffee</h2>
+            <div class="menu-grid">
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/coffee-cup.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee</h4>
+                    <h5>30.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/coffee-cup.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee</h4>
+                    <h5>30.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/coffee-cup.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee</h4>
+                    <h5>30.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/coffee-cup.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee</h4>
+                    <h5>30.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/coffee-cup.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee</h4>
+                    <h5>30.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/coffee-cup.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee</h4>
+                    <h5>30.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="milk-tea-section">
+            <h2 class="menu-header">Milk Tea </h2>
+            <div class="menu-grid">
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Coffee Phin</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/milk-tea.jpeg' %}" class="menu-img-item" />
+                    <h4>Milk Tea</h4>
+                    <h5>50.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="freeze-section">
+            <h2 class="menu-header">Freeze</h2>
+            <div class="menu-grid">
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/matcha-freeze.png' %}" class="menu-img-item" />
+                    <h4>Matcha</h4>
+                    <h5>35.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/matcha-freeze.png' %}" class="menu-img-item" />
+                    <h4>Matcha</h4>
+                    <h5>35.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/matcha-freeze.png' %}" class="menu-img-item" />
+                    <h4>Matcha</h4>
+                    <h5>35.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/matcha-freeze.png' %}" class="menu-img-item" />
+                    <h4>Matcha</h4>
+                    <h5>35.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/matcha-freeze.png' %}" class="menu-img-item" />
+                    <h4>Matcha</h4>
+                    <h5>35.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/matcha-freeze.png' %}" class="menu-img-item" />
+                    <h4>Matcha</h4>
+                    <h5>35.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="fruit-tea-section">
+            <h2 class="menu-header">Fruit Tea</h2>
+            <div class="menu-grid">
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/lychee-tea.png' %}" class="menu-img-item" />
+                    <h4>Lychee</h4>
+                    <h5>40.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/lychee-tea.png' %}" class="menu-img-item" />
+                    <h4>Lychee</h4>
+                    <h5>40.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/lychee-tea.png' %}" class="menu-img-item" />
+                    <h4>Lychee</h4>
+                    <h5>40.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/lychee-tea.png' %}" class="menu-img-item" />
+                    <h4>Lychee</h4>
+                    <h5>40.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/lychee-tea.png' %}" class="menu-img-item" />
+                    <h4>Lychee</h4>
+                    <h5>40.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+            </div>
+        </div>
+        <div id="cake-section">
+            <h2 class="menu-header">Cake</h2>
+            <div class="menu-grid">
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/donut.jpg' %}" class="menu-img-item" />
+                    <h4>Donut</h4>
+                    <h5>25.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/donut.jpg' %}" class="menu-img-item" />
+                    <h4>Donut</h4>
+                    <h5>25.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/donut.jpg' %}" class="menu-img-item" />
+                    <h4>Donut</h4>
+                    <h5>25.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/donut.jpg' %}" class="menu-img-item" />
+                    <h4>Donut</h4>
+                    <h5>25.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+                <div class="menu-grid-item">
+                    <img src="{% static 'images/donut.jpg' %}" class="menu-img-item" />
+                    <h4>Donut</h4>
+                    <h5>25.000VND</h5>
+                    <button type="button" class="btn btn-danger">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
